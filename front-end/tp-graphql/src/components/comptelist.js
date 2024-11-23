@@ -15,14 +15,14 @@ const CompteList = ({ onSelectCompte }) => {
         <div
           className="compte-card"
           key={compte.id}
-          onClick={() => onSelectCompte(compte.id)}
+          onClick={() => onSelectCompte(compte.id, compte.solde)}
         >
           <h3>Account ID: {compte.id}</h3>
           <p>
             <strong>Type:</strong> {compte.type}
           </p>
           <p>
-            <strong>Balance:</strong> {compte.solde}€
+            <strong>Balance:</strong> {compte.solde} €
           </p>
           <p>
             <strong>Created On:</strong> {compte.dateCreation}
